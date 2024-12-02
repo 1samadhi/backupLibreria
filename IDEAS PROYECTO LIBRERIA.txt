@@ -1,0 +1,61 @@
+1. Mejorar la Seguridad del Login
+Hash de Contraseñas:
+Actualmente estás almacenando contraseñas en texto plano. Cambia esto para que las contraseñas se almacenen como hashes.
+Usa una librería como BCrypt o las utilidades estándar de Java para hashing.
+Ajusta UsuarioDAO para verificar contraseñas hasheadas al iniciar sesión.
+
+
+2. Gestión de Roles
+Añade soporte para múltiples roles como administrador, bibliotecario y lector.
+Usa el campo rol en la tabla usuarios para mostrar diferentes opciones en la interfaz gráfica según el tipo de usuario.
+Por ejemplo:
+Administrador: Puede gestionar usuarios y libros.
+Bibliotecario: Puede gestionar solo libros.
+Lector: Puede ver libros, pero no editar.
+
+
+
+3. Agregar Funcionalidades al CRUD de Libros
+Búsqueda Avanzada:
+Añade un campo de búsqueda que permita filtrar libros por título, autor o género.
+Pagos o Préstamos:
+Implementa un sistema que permita registrar el préstamo o venta de libros.
+Crea una tabla adicional en la base de datos llamada transacciones.
+
+
+4. Gestión de Usuarios
+CRUD para Usuarios:
+Añade una interfaz gráfica para gestionar usuarios.
+Implementa operaciones CRUD para añadir, editar, eliminar y listar usuarios.
+Perfil de Usuario:
+Permite a los usuarios editar su propio perfil (nombre, contraseña, etc.).
+
+
+5. Reportes y Estadísticas
+Genera reportes de los libros más vendidos o prestados.
+Usa gráficos para representar datos como:
+Cantidad de libros por género.
+Total de ingresos por ventas (si implementas esa funcionalidad).
+
+
+6. Mejorar la Interfaz Gráfica
+Usa un diseño más atractivo con herramientas como:
+FlatLaf para un look moderno.
+JGoodies para mejores layouts.
+Personaliza las tablas con colores y estilos para resaltar datos importantes.
+
+
+7. Crear el README
+Incluye en tu archivo README lo siguiente:
+Descripción del Proyecto: Qué hace y por qué es útil.
+Requisitos del Sistema: Herramientas necesarias para correr el proyecto.
+Instrucciones de Uso: Cómo configurar y usar la aplicación.
+Capturas de Pantalla: Para mostrar cómo se ve la aplicación.
+
+
+8. Preparar para Entrega o Uso Final
+Exportar el Proyecto:
+Genera un .jar ejecutable para facilitar el uso.
+Validación y Testing:
+Asegúrate de que todas las funcionalidades están bien probadas.
+Prueba con datos inválidos para verificar la robustez del sistema.
